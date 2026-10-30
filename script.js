@@ -10,3 +10,5 @@ if(f){f.addEventListener('submit',e=>{e.preventDefault();
   const t=`Hola Full Shine, soy ${d.get('n')}. Servicio: ${d.get('s')}. Vehículo: ${d.get('v')}. ${d.get('m')}`;
   window.open('https://wa.me/573001828095?text='+encodeURIComponent(t),'_blank');
 })}
+
+const cr=document.getElementById('cmprange');if(cr){cr.addEventListener('input',()=>document.getElementById('cmp').style.setProperty('--pos',cr.value+'%'))}
